@@ -15,6 +15,7 @@ import coil.load
 import com.wsgd.sh.hackerthon.databinding.ActivityMainBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
 
@@ -141,6 +142,17 @@ class MainActivity : AppCompatActivity() {
                         binding.temperatureText.setText("6도 상승할거에요")
                     }
                 }
+                b(count)
+            }
+        }
+    }
+
+
+    private fun b(count: String) {
+        var a = 0.0
+        kotlin.runCatching {
+            for(i in 1..10000000){
+                a += pow1.pow(pow2)
             }
         }
     }
